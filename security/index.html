@@ -13,12 +13,6 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/privacy/">Privacy Policy</a>
-            <a href="/security/">Security Policy</a>
-            <a href="/terms/">Terms & Conditions</a>
-        </nav>
         <div class="logo-container">
             <img src="/assets/images/sentivize-logo.svg" alt="Sentivize Logo" style="width: 35px; margin-right: 0.5em;">
             <h1 style="margin: 0; font-size: 2em;">Sentivize Health</h1>
@@ -110,19 +104,5 @@
         <a href="/security/">Security Policy</a>
         <a href="/terms/">Terms & Conditions</a>
     </footer>
-    
-    <!-- Highlight current nav tag -->
-    <script>
-        // Get current path
-        const currentPath = window.location.pathname;
-        // Select all nav links
-        const navLinks = document.querySelectorAll('nav a')
-        // Loop through link and check href to add 'current' class
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('current');
-            }
-        });
-    </script>
 </body>
 </html>

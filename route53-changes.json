@@ -1,0 +1,66 @@
+{
+  "Comment": "Migrate sentivize.com to GitHub Pages",
+  "Changes": [
+    {
+      "Action": "DELETE",
+      "ResourceRecordSet": {
+        "Name": "sentivize.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "52.23.146.127"
+          }
+        ]
+      }
+    },
+    {
+      "Action": "DELETE",
+      "ResourceRecordSet": {
+        "Name": "dev.sentivize.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "54.236.82.73"
+          }
+        ]
+      }
+    },
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "sentivize.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "185.199.108.153"
+          },
+          {
+            "Value": "185.199.109.153"
+          },
+          {
+            "Value": "185.199.110.153"
+          },
+          {
+            "Value": "185.199.111.153"
+          }
+        ]
+      }
+    },
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "www.sentivize.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "jturan.github.io"
+          }
+        ]
+      }
+    }
+  ]
+}
