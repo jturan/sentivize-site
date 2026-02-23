@@ -1,0 +1,61 @@
+:root,
+::backdrop {
+    --bg: #fff;
+    --accent-bg: #f5f7ff;
+    --text: #212121;
+    --text-light: #585858;
+    --border: #898ea4;
+    --accent: #584ff2;
+    --accent-hover: #7972f4;
+    --accent-text: var(--bg);
+    --code: #d81b60;
+    --preformatted: #444;
+    --marked: #7972f4;
+    --disabled: #efefef;
+}
+
+/* Ensure light mode overrides for key elements */
+body {
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+a,
+a:visited {
+    color: var(--accent);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Other elements following the same pattern */
+header {
+    background-color: var(--accent-bg);
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+}
+
+footer {
+    color: var(--text-light);
+    border-top: 1px solid var(--border);
+}
+
+/* Continue overriding other elements as needed... */
+
+/* Specific overrides for images and videos that might be impacted by dark mode settings */
+img,
+video {
+    opacity: 1;
+    /* Remove any opacity settings from dark mode */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name {
+    color: white;
+}
